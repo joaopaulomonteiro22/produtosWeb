@@ -1,0 +1,56 @@
+<div class="row mt-5">
+  <div class="col-md-4 offset-md-4">
+      <div class="card">
+          <div class="card-body">
+
+
+              <div class="text-center">
+                  <h3>Acessar Sistema</h3>
+                  <p>Entre com os seus dados de usuário</p>
+              </div>
+              <div class="text-danger mb-2 text-center">
+                <strong>{{mensagemErro}}</strong>
+              </div>             
+              <form [formGroup]="form" (ngSubmit)="submit()">
+                  <div class="mb-3">
+                      <label>Email de acesso:</label>
+                      <input type="text" class="form-control"
+                          placeholder="Digite o email aqui." formControlName="email"/>
+                          <div class="text-danger" *ngIf="f['email'].touched && f['email'].invalid">
+                            <span *ngIf="f['email'].errors && f['email'].errors['required']">
+                            por favor, informe o seu email de acesso</span>
+                            <span *ngIf="f['email'].errors &&f['email'].errors['email']">
+                            por favor,informe o endereço de  email válido</span>
+                            
+                        </div>
+                  </div>
+                  <div class="mb-3">
+                      <label>Senha de acesso:</label>
+                      <input type="password" class="form-control"
+                          placeholder="Digite a senha aqui." formControlName="senha"/>
+                          <div class="text-danger" *ngIf="f['senha'].touched && f['senha'].invalid">
+                            <span *ngIf="f['senha'].errors && f['senha'].errors['required']">
+                            por favor, informe o sua senha de acesso</span>
+                            <span *ngIf="f['senha'].errors &&f['senha'].errors['minlength']">
+                            por favor,informe  no minimo 8 caracteres.</span>
+                            
+                        </div>
+                          
+                  </div>
+                  <div class="mb-3 d-grid">
+                      <button type="submit" class="btn btn-primary"
+                      [disabled]="form.invalid">
+                          Entrar no sistema
+                      </button>
+                  </div>
+              </form>
+
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+

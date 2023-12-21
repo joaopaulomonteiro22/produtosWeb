@@ -4,8 +4,8 @@
 
 O `produtosWeb` é um projeto Angular que oferece uma interface de usuário (FrontEnd) para gerenciamento de produtos. Este projeto faz parte de um ecossistema de APIs composto ainda por outros dois projetos:
 
-- [javaUsuariosApi](https://github.com/sergio-coti/javaUsuariosApi): API Spring Boot para controle de usuários.
-- [javaProdutosApi](https://github.com/sergio-coti/javaProdutosApi): API Spring Boot para controle de produtos.
+- [javaUsuariosApi](https://github.com/joaopaulomonteiro22/javaUsuariosApi): API Spring Boot para controle de usuários.
+- [javaProdutosApi](https://github.com/joaopaulomonteiro22/javaProdutosApi): API Spring Boot para controle de produtos.
 
 ## Tecnologias Utilizadas
 
@@ -18,8 +18,8 @@ O `produtosWeb` é um projeto Angular que oferece uma interface de usuário (Fro
 
 ## Repositórios Relacionados
 
-- [Repositório da javaUsuariosApi](https://github.com/sergio-coti/javaUsuariosApi)
-- [Repositório da javaProdutosApi](https://github.com/sergio-coti/javaProdutosApi)
+- [Repositório da javaUsuariosApi](https://github.com/joaopaulomonteiro22/javaUsuariosApi)
+- [Repositório da javaProdutosApi](https://github.com/joaopaulomonteiro22/javaProdutosApi)
 
 
 
